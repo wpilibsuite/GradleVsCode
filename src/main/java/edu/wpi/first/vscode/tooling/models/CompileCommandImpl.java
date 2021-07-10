@@ -76,6 +76,7 @@ public class CompileCommandImpl implements CompileCommand {
       cmd.append(' ');
     }
 
+    cmd.append("-c "); // Don't link.
     cmd.append('"');
     cmd.append(file.getAbsolutePath());
     cmd.append('"');
